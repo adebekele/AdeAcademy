@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physics: CH4 Energy Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <a class="home-link" href="../../index.html">Physics Review Studio</a>
+      <section class="topbar" aria-label="Energy Review Lab">
+        <div>
+          <p class="eyebrow">Serway and Vuille / Work and Energy</p>
+          <h1>Energy Lab</h1>
+        </div>
+        <div class="session-stats" aria-label="Session progress">
+          <div><span id="solvedCount">0</span><small>solved</small></div>
+          <div><span id="streakCount">0</span><small>streak</small></div>
+        </div>
+      </section>
+      <section class="layout">
+        <aside class="sidebar" aria-label="Review modes">
+          <button class="mode-button active" data-mode="work"><span>Work</span><small>Force through distance</small></button>
+          <button class="mode-button" data-mode="kinetic"><span>Kinetic Energy</span><small>Speed and mass</small></button>
+          <button class="mode-button" data-mode="potential"><span>Potential Energy</span><small>Gravity and springs</small></button>
+          <button class="mode-button" data-mode="power"><span>Power</span><small>Energy per time</small></button>
+        </aside>
+        <section class="workspace" aria-live="polite">
+          <div class="problem-panel">
+            <div class="problem-meta"><span id="modeLabel"></span><span id="skillLabel"></span><span id="difficultyLabel"></span></div>
+            <div class="problem-text" id="problemText"></div>
+            <div class="strategy-row" id="strategyRow" aria-label="Choose a strategy"></div>
+            <label class="answer-label" for="answerInput">Student answer</label>
+            <textarea id="answerInput" rows="4" placeholder="Type the final answer with units, or a short explanation of your method."></textarea>
+            <div class="actions">
+              <button id="checkButton" class="primary">Check</button>
+              <button id="hintButton">Hint</button>
+              <button id="solutionButton">Solution</button>
+              <button id="nextButton">Next</button>
+            </div>
+          </div>
+          <div class="feedback-panel">
+            <div class="feedback-block"><h2>Feedback</h2><p id="feedbackText">Pick an energy model, then try the problem.</p></div>
+            <div class="feedback-block"><h2>Hint Trail</h2><ol id="hintList"></ol></div>
+            <div class="feedback-block"><h2>Main Idea Review</h2><div id="reviewNotes" class="review-notes"></div></div>
+          </div>
+        </section>
+      </section>
+      <section class="teacher-panel">
+        <details>
+          <summary>Teacher Controls and Lesson Flow</summary>
+          <div class="teacher-grid">
+            <div>
+              <h2>Suggested 60-minute arc</h2>
+              <ol>
+                <li>12 min: Work and signs.</li>
+                <li>14 min: Kinetic energy and speed changes.</li>
+                <li>18 min: Conservation of mechanical energy.</li>
+                <li>12 min: Power and rates.</li>
+                <li>4 min: Exit reflection: what energy transfers?</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Discussion prompts</h2>
+              <ul>
+                <li>What is the system?</li>
+                <li>Is energy stored, transferred, or dissipated?</li>
+                <li>Which height is the zero point?</li>
+                <li>What does the unit joule mean in this context?</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

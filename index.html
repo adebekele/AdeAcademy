@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdeAcademy</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="AdeAcademy home">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>AdeAcademy</strong>
+          <small>Interactive course labs</small>
+        </span>
+      </a>
+      <nav aria-label="Subject navigation">
+        <a href="subjects/math/index.html">Math</a>
+        <a href="subjects/physics/index.html">Physics</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Course Portal</p>
+          <h1>Interactive lessons for every class you teach.</h1>
+          <p>
+            AdeAcademy organizes each subject into self-contained review labs with strategy choices,
+            progressive hints, answer checks, worked solutions, and teacher flow notes.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="subjects/physics/index.html">Open Physics</a>
+            <a class="secondary-link" href="subjects/math/index.html">Open Math</a>
+          </div>
+        </div>
+        <div class="academy-scene" aria-label="AdeAcademy course map">
+          <div class="course-map">
+            <span class="node hub">Ade</span>
+            <span class="node math-node">Math</span>
+            <span class="node physics-node">Physics</span>
+            <span class="node future-node">Next</span>
+            <span class="link link-one"></span>
+            <span class="link link-two"></span>
+            <span class="link link-three"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="subject-band" aria-label="Available subjects">
+        <div class="section-heading">
+          <p class="eyebrow">Subjects</p>
+          <h2>Choose a learning studio</h2>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="subject-visual math-visual" aria-hidden="true">
+              <span class="axis x"></span><span class="axis y"></span><span class="curve"></span>
+            </div>
+            <div class="subject-body">
+              <p class="subject-label">Math</p>
+              <h3>Algebra Review Studio</h3>
+              <p>Function review, complex numbers, quadratics, and conics in active review-lab format.</p>
+              <a href="subjects/math/index.html">Enter Math</a>
+            </div>
+          </article>
+
+          <article class="subject-card featured">
+            <div class="subject-visual physics-visual" aria-hidden="true">
+              <span class="track"></span><span class="cart"></span><span class="vector"></span>
+            </div>
+            <div class="subject-body">
+              <p class="subject-label">Physics</p>
+              <h3>College Physics Studio</h3>
+              <p>Serway and Vuille-aligned companion labs for measurement, vectors, kinematics, forces, energy, and momentum.</p>
+              <a href="subjects/physics/index.html">Enter Physics</a>
+            </div>
+          </article>
+
+          <article class="subject-card">
+            <div class="subject-visual future-visual" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="subject-body">
+              <p class="subject-label">Future</p>
+              <h3>More Classes</h3>
+              <p>Add chemistry, statistics, computer science, or any other course as a new subject folder.</p>
+              <a href="README.md">View Structure</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow-band" aria-label="Teaching workflow">
+        <div class="workflow">
+          <div>
+            <p class="eyebrow">Growth Model</p>
+            <h2>One portal, many courses</h2>
+          </div>
+          <ol>
+            <li>Add a subject folder under <span class="code">subjects/</span>.</li>
+            <li>Add a subject homepage that lists courses and chapters.</li>
+            <li>Keep each chapter as a static lab with its own files.</li>
+            <li>Publish the whole folder with GitHub Pages.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

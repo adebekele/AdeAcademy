@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physics: CH1 Measurement, Math Tools, and Vectors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <a class="home-link" href="../../index.html">Physics Review Studio</a>
+      <section class="topbar" aria-label="Chapter 1 Review Lab">
+        <div>
+          <p class="eyebrow">Serway and Vuille / Introduction and Mathematical Tools</p>
+          <h1>Measurement, Math Tools, and Vectors</h1>
+        </div>
+        <div class="session-stats" aria-label="Session progress">
+          <div>
+            <span id="solvedCount">0</span>
+            <small>solved</small>
+          </div>
+          <div>
+            <span id="streakCount">0</span>
+            <small>streak</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar" aria-label="Review modes">
+          <button class="mode-button active" data-mode="standardsMatter">
+            <span>Standards and Matter</span>
+            <small>Length, mass, time, atoms</small>
+          </button>
+          <button class="mode-button" data-mode="dimensions">
+            <span>Dimensional Analysis</span>
+            <small>Dimensions and formulas</small>
+          </button>
+          <button class="mode-button" data-mode="measurement">
+            <span>Measurement Quality</span>
+            <small>Uncertainty, sig figs</small>
+          </button>
+          <button class="mode-button" data-mode="conversions">
+            <span>Conversions and Estimates</span>
+            <small>Units, prefixes, magnitude</small>
+          </button>
+          <button class="mode-button" data-mode="vectors">
+            <span>Coordinates, Trig, Vectors</span>
+            <small>Components and direction</small>
+          </button>
+          <button class="mode-button" data-mode="strategy">
+            <span>Problem Strategy</span>
+            <small>Plan, solve, check</small>
+          </button>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <div class="problem-panel">
+            <div class="problem-meta">
+              <span id="modeLabel">Standards and Matter</span>
+              <span id="skillLabel">Standards</span>
+              <span id="difficultyLabel">Level 1</span>
+            </div>
+
+            <div class="problem-text" id="problemText"></div>
+
+            <div class="strategy-row" id="strategyRow" aria-label="Choose a strategy"></div>
+
+            <label class="answer-label" for="answerInput">Student answer</label>
+            <textarea id="answerInput" rows="4" placeholder="Type the final answer, units, or a short explanation of your method."></textarea>
+
+            <div class="actions">
+              <button id="checkButton" class="primary">Check</button>
+              <button id="hintButton">Hint</button>
+              <button id="solutionButton">Solution</button>
+              <button id="nextButton">Next</button>
+            </div>
+          </div>
+
+          <div class="feedback-panel">
+            <div class="feedback-block">
+              <h2>Feedback</h2>
+              <p id="feedbackText">Pick a strategy, then try the problem. Hints reveal one step at a time.</p>
+            </div>
+            <div class="feedback-block">
+              <h2>Hint Trail</h2>
+              <ol id="hintList"></ol>
+            </div>
+            <div class="feedback-block">
+              <h2>Main Idea Review</h2>
+              <div id="reviewNotes" class="review-notes"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="teacher-panel">
+        <details>
+          <summary>Teacher Controls and Lesson Flow</summary>
+          <div class="teacher-grid">
+            <div>
+              <h2>Suggested 75-minute arc</h2>
+              <ol>
+                <li>10 min: Standards of length, mass, time, and matter as atoms.</li>
+                <li>12 min: Dimensional analysis as a formula-checking habit.</li>
+                <li>12 min: Uncertainty, measurement limits, and significant figures.</li>
+                <li>14 min: Unit conversions, prefixes, estimates, and order of magnitude.</li>
+                <li>20 min: Coordinate systems, trigonometry, vectors, and components.</li>
+                <li>7 min: Problem-solving strategy reflection.</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Discussion prompts</h2>
+              <ul>
+                <li>What physical quantity is being measured?</li>
+                <li>What units must the final answer have?</li>
+                <li>How many digits are actually justified by the measurement?</li>
+                <li>Which triangle side is opposite or adjacent to the angle?</li>
+                <li>Can the answer be checked by dimensions, estimate, or vector direction?</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
