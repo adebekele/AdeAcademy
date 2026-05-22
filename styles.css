@@ -70,6 +70,10 @@ a {
   display: block;
 }
 
+.brand strong {
+  font-size: 1.04rem;
+}
+
 .brand small {
   color: var(--muted);
   font-weight: 700;
@@ -124,7 +128,7 @@ p {
 h1 {
   max-width: 800px;
   margin-bottom: 18px;
-  font-size: clamp(2.55rem, 6vw, 5.6rem);
+  font-size: clamp(3rem, 7vw, 6.4rem);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -379,11 +383,16 @@ h3 {
 }
 
 .subject-label {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: var(--green);
-  font-size: 0.82rem;
+  font-size: clamp(2.35rem, 5vw, 4.4rem);
+  line-height: 0.95;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: none;
+}
+
+.subject-body h3 {
+  font-size: 1.42rem;
 }
 
 .subject-body p:not(.subject-label) {
