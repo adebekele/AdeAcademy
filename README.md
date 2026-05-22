@@ -27,6 +27,7 @@ The homepage links to each chapter using local relative paths, so no internet co
 - `Algebra/CH2-Function-Review/index.html`
 - `Algebra/CH3-Complex-Numbers/index.html`
 - `Algebra/CH4-Quadratics/index.html`
+- `Algebra/CH5-Conics/index.html`
 
 ## Optional Local Server
 
