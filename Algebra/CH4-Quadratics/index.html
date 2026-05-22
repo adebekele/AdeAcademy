@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algebra: CH4 Quadratics Review Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Quadratics Review Lab">
+        <div>
+          <p class="eyebrow">Algebra / CH4-Quadratics</p>
+          <h1>Quadratics Review Lab</h1>
+        </div>
+        <div class="session-stats" aria-label="Session progress">
+          <div>
+            <span id="solvedCount">0</span>
+            <small>solved</small>
+          </div>
+          <div>
+            <span id="streakCount">0</span>
+            <small>streak</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar" aria-label="Review modes">
+          <button class="mode-button active" data-mode="fluency">
+            <span>Fluency</span>
+            <small>Solving and factoring</small>
+          </button>
+          <button class="mode-button" data-mode="roots">
+            <span>Root Structure</span>
+            <small>Vieta and parameters</small>
+          </button>
+          <button class="mode-button" data-mode="inequalities">
+            <span>Inequalities</span>
+            <small>Signs and domains</small>
+          </button>
+          <button class="mode-button" data-mode="functions">
+            <span>Functions</span>
+            <small>Values and interpolation</small>
+          </button>
+          <button class="mode-button" data-mode="mixed">
+            <span>Mixed Review</span>
+            <small>Contest-style blend</small>
+          </button>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <div class="problem-panel">
+            <div class="problem-meta">
+              <span id="modeLabel">Fluency</span>
+              <span id="skillLabel">Factoring</span>
+              <span id="difficultyLabel">Level 1</span>
+            </div>
+
+            <div class="problem-text" id="problemText"></div>
+
+            <div class="strategy-row" id="strategyRow" aria-label="Choose a strategy"></div>
+
+            <label class="answer-label" for="answerInput">Student answer</label>
+            <textarea id="answerInput" rows="4" placeholder="Type the final answer, or a short explanation of your method."></textarea>
+
+            <div class="actions">
+              <button id="checkButton" class="primary">Check</button>
+              <button id="hintButton">Hint</button>
+              <button id="solutionButton">Solution</button>
+              <button id="nextButton">Next</button>
+            </div>
+          </div>
+
+          <div class="feedback-panel">
+            <div class="feedback-block">
+              <h2>Feedback</h2>
+              <p id="feedbackText">Pick a strategy, then try the problem. Hints reveal one step at a time.</p>
+            </div>
+            <div class="feedback-block">
+              <h2>Hint Trail</h2>
+              <ol id="hintList"></ol>
+            </div>
+            <div class="feedback-block">
+              <h2>Main Idea Review</h2>
+              <div id="reviewNotes" class="review-notes"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="teacher-panel">
+        <details>
+          <summary>Teacher Controls and Lesson Flow</summary>
+          <div class="teacher-grid">
+            <div>
+              <h2>Suggested 60-minute arc</h2>
+              <ol>
+                <li>8 min: Fluency warmup, students solve independently.</li>
+                <li>12 min: Root Structure, discuss Vieta as a shortcut.</li>
+                <li>12 min: Inequalities and domain restrictions.</li>
+                <li>15 min: Function Thinking and parameter questions.</li>
+                <li>10 min: Mixed Review challenge pairs.</li>
+                <li>3 min: Exit reflection: name the hidden structure.</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Discussion prompts</h2>
+              <ul>
+                <li>What is the fastest useful thing to compute?</li>
+                <li>Where do roots, coefficients, and signs meet?</li>
+                <li>Can we avoid expanding everything?</li>
+                <li>What restrictions must be checked before solving?</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

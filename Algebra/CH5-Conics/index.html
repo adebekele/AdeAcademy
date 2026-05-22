@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algebra: CH5 Conics Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Conics Lab">
+        <div>
+          <p class="eyebrow">Algebra / CH5-Conics</p>
+          <h1>Conics Lab</h1>
+        </div>
+        <div class="session-stats" aria-label="Session progress">
+          <div>
+            <span id="solvedCount">0</span>
+            <small>solved</small>
+          </div>
+          <div>
+            <span id="streakCount">0</span>
+            <small>streak</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar" aria-label="Review modes">
+          <button class="mode-button active" data-mode="parabolas">
+            <span>Parabolas</span>
+            <small>Vertex, focus, directrix</small>
+          </button>
+          <button class="mode-button" data-mode="problemSolving">
+            <span>Parabola Problems</span>
+            <small>Model and intersect</small>
+          </button>
+          <button class="mode-button" data-mode="extrema">
+            <span>Maxima Minima</span>
+            <small>Quadratic optimization</small>
+          </button>
+          <button class="mode-button" data-mode="circles">
+            <span>Circles</span>
+            <small>Center and radius</small>
+          </button>
+          <button class="mode-button" data-mode="ellipses">
+            <span>Ellipses</span>
+            <small>Axes and foci</small>
+          </button>
+          <button class="mode-button" data-mode="hyperbolas">
+            <span>Hyperbolas</span>
+            <small>Asymptotes and foci</small>
+          </button>
+          <button class="mode-button" data-mode="summary">
+            <span>Chapter Summary</span>
+            <small>Mixed conic review</small>
+          </button>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <div class="problem-panel">
+            <div class="problem-meta">
+              <span id="modeLabel">Parabolas</span>
+              <span id="skillLabel">Vertex Form</span>
+              <span id="difficultyLabel">Level 1</span>
+            </div>
+
+            <div class="problem-text" id="problemText"></div>
+
+            <div class="strategy-row" id="strategyRow" aria-label="Choose a strategy"></div>
+
+            <label class="answer-label" for="answerInput">Student answer</label>
+            <textarea id="answerInput" rows="4" placeholder="Type the final answer, or a short explanation of your method."></textarea>
+
+            <div class="actions">
+              <button id="checkButton" class="primary">Check</button>
+              <button id="hintButton">Hint</button>
+              <button id="solutionButton">Solution</button>
+              <button id="nextButton">Next</button>
+            </div>
+          </div>
+
+          <div class="feedback-panel">
+            <div class="feedback-block">
+              <h2>Feedback</h2>
+              <p id="feedbackText">Pick a strategy, then try the problem. Hints reveal one step at a time.</p>
+            </div>
+            <div class="feedback-block">
+              <h2>Hint Trail</h2>
+              <ol id="hintList"></ol>
+            </div>
+            <div class="feedback-block">
+              <h2>Main Idea Review</h2>
+              <div id="reviewNotes" class="review-notes"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="teacher-panel">
+        <details>
+          <summary>Teacher Controls and Lesson Flow</summary>
+          <div class="teacher-grid">
+            <div>
+              <h2>Suggested 60-minute arc</h2>
+              <ol>
+                <li>8 min: Parabolas and standard/vertex/focus forms.</li>
+                <li>10 min: Problem solving with parabolas.</li>
+                <li>8 min: Maxima and minima of quadratics.</li>
+                <li>9 min: Circles by center-radius form.</li>
+                <li>10 min: Ellipses and foci.</li>
+                <li>10 min: Hyperbolas and asymptotes.</li>
+                <li>5 min: Chapter summary questions.</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Discussion prompts</h2>
+              <ul>
+                <li>Which standard form is this conic closest to?</li>
+                <li>What feature can be read immediately from the equation?</li>
+                <li>Do we need to complete the square first?</li>
+                <li>How does the algebra describe the geometry?</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

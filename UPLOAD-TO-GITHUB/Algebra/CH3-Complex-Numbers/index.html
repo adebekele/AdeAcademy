@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algebra: CH3 Complex Numbers Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Complex Numbers Lab">
+        <div>
+          <p class="eyebrow">Algebra / CH3-Complex-Numbers</p>
+          <h1>Complex Numbers Lab</h1>
+        </div>
+        <div class="session-stats" aria-label="Session progress">
+          <div>
+            <span id="solvedCount">0</span>
+            <small>solved</small>
+          </div>
+          <div>
+            <span id="streakCount">0</span>
+            <small>streak</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar" aria-label="Review modes">
+          <button class="mode-button active" data-mode="arithmetic">
+            <span>Arithmetic</span>
+            <small>Operate in a+bi form</small>
+          </button>
+          <button class="mode-button" data-mode="plane">
+            <span>Complex Plane</span>
+            <small>Coordinates and distance</small>
+          </button>
+          <button class="mode-button" data-mode="parts">
+            <span>Real Imag Parts</span>
+            <small>Identify and compare</small>
+          </button>
+          <button class="mode-button" data-mode="graphing">
+            <span>Graphing</span>
+            <small>Plot and transform points</small>
+          </button>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <div class="problem-panel">
+            <div class="problem-meta">
+              <span id="modeLabel">Fluency</span>
+              <span id="skillLabel">Factoring</span>
+              <span id="difficultyLabel">Level 1</span>
+            </div>
+
+            <div class="problem-text" id="problemText"></div>
+
+            <div class="strategy-row" id="strategyRow" aria-label="Choose a strategy"></div>
+
+            <label class="answer-label" for="answerInput">Student answer</label>
+            <textarea id="answerInput" rows="4" placeholder="Type the final answer, or a short explanation of your method."></textarea>
+
+            <div class="actions">
+              <button id="checkButton" class="primary">Check</button>
+              <button id="hintButton">Hint</button>
+              <button id="solutionButton">Solution</button>
+              <button id="nextButton">Next</button>
+            </div>
+          </div>
+
+          <div class="feedback-panel">
+            <div class="feedback-block">
+              <h2>Feedback</h2>
+              <p id="feedbackText">Pick a strategy, then try the problem. Hints reveal one step at a time.</p>
+            </div>
+            <div class="feedback-block">
+              <h2>Hint Trail</h2>
+              <ol id="hintList"></ol>
+            </div>
+            <div class="feedback-block">
+              <h2>Main Idea Review</h2>
+              <div id="reviewNotes" class="review-notes"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="teacher-panel">
+        <details>
+          <summary>Teacher Controls and Lesson Flow</summary>
+          <div class="teacher-grid">
+            <div>
+              <h2>Suggested 60-minute arc</h2>
+              <ol>
+                <li>15 min: Arithmetic of complex numbers in standard form.</li>
+                <li>12 min: Complex plane as coordinates <span class="math">(a,b)</span>.</li>
+                <li>12 min: Real and imaginary parts, including equations from matching parts.</li>
+                <li>16 min: Graphing in the complex plane, distance, and point movement.</li>
+                <li>5 min: Exit reflection: how does <span class="math">a+bi</span> connect algebra to geometry?</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Discussion prompts</h2>
+              <ul>
+                <li>Is the answer in standard form <span class="math">a+bi</span>?</li>
+                <li>What point represents this complex number?</li>
+                <li>Which part is real, and which coefficient is imaginary?</li>
+                <li>How did the point move in the complex plane?</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
